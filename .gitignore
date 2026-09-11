@@ -1,0 +1,52 @@
+# This workspace is a 5.8 GB research archive. Publish only the curated layer.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/SECURITY.md
+!/docs/
+!/firmware/
+!/matlab/
+
+# Local/editor artifacts inside curated directories
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.asv
+*.autosave
+*.bak
+*.tmp
+*.log
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+.vscode/
+.idea/
+slprj/
+codegen/
+
+# Secrets, credentials, and local configuration
+.env
+.env.*
+!.env.example
+*credential*.json
+*credentials*.json
+*secret*.json
+*.pem
+*.key
+
+# Large/generated data must stay outside Git
+*.wav
+*.mp3
+*.flac
+*.mp4
+*.avi
+*.mov
+*.mat
+*.tflite
+*.zip
+*.7z
+*.rar
